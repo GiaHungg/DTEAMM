@@ -1,0 +1,1019 @@
+
+
+/* =========================
+   1. CAI DAT CHUNG
+========================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #222222;
+    background-color: white;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/* =========================
+   2. HEADER
+========================= */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 5%;
+    background-color: black;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #C7A66A;
+    font-size: 28px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+
+.navbar a {
+    color: #E5E5E0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #C7A66A;
+}
+
+
+.navbar .register-btn {
+    background-color: #C7A66A;
+    color: black;
+    padding: 10px 18px;
+}
+
+
+.navbar .register-btn:hover {
+    background-color: #AD8D53;
+}
+
+
+
+
+/* =========================
+   3. PAGE BANNER
+========================= */
+
+
+.page-banner {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 8%;
+    text-align: center;
+    color: white;
+    background-color: linear-gradient(
+            90deg,
+            rgba(15,22,19,0.95),
+            rgba(15,22,19,0.55),
+            rgba(15,22,19,0.15)
+        ),
+;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.3)
+    ), url("images/banner.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.banner-content {
+    max-width: 850px;
+}
+
+
+.banner-content > p:first-child {
+    color: #C7A66A;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+
+.banner-content h1 {
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+
+.banner-content h1 span {
+    color: #C7A66A;
+}
+
+
+.banner-content > p:last-child {
+    color: #E0E2DC;
+    font-size: 18px;
+}
+
+
+
+
+/* =========================
+   4. TIEU DE CAC PHAN
+========================= */
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.section-title > p {
+    color: #AD8D53;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+
+.section-title h2 {
+    color: black;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+
+.section-title span {
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #C7A66A;
+    margin: 12px auto 0;
+}
+
+
+
+
+/* =========================
+   5. LICH TAP
+========================= */
+
+
+.lichtap {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 0 55px;
+}
+
+
+.anhlichtap {
+    text-align: center;
+    background-color: #F2F0E9;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #C7A66A;
+}
+
+
+.anhlichtap img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
+    
+}
+
+
+
+
+/* =========================
+   6. GOI TAP
+========================= */
+
+
+.goitap {
+    background-color: #F2F0E9;
+    padding: 65px 0 45px;
+}
+
+
+.goitap > .section-title {
+    margin-bottom: 15px;
+}
+
+
+
+
+/* =========================
+   7. CAC KHOA HOC
+========================= */
+
+
+.khoahoc {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 0;
+}
+
+
+.tenkhoahoc {
+    margin-bottom: 25px;
+    border-left: 4px solid #C7A66A;
+    padding-left: 15px;
+}
+
+
+.tenkhoahoc h2 {
+    font-size: 30px;
+    color: #26332D;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+
+.tenkhoahoc p {
+    color: #626962;
+    font-size: 16px;
+}
+
+
+
+
+/* =========================
+   8. CHIA COT KHOA HOC
+========================= */
+
+
+.chiaphan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+
+
+/* =========================
+   9. CARD KHOA HOC
+========================= */
+
+
+.cardkhoahoc {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+
+.cardkhoahoc:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+
+.cardkhoahoc img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+
+
+
+/* =========================
+   10. THONG TIN KHOA HOC
+========================= */
+
+
+.thongtin {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+}
+
+
+.level {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #26332D;
+    color: #C7A66A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+
+.thongtin h3 {
+    color: #222222;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.thongtin > p {
+    color: #626962;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* =========================
+   11. CHI TIET KHOA HOC
+========================= */
+
+
+.chitiet {
+    color: #626962;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+
+.chitiet p {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* =========================
+   12. GIA KHOA HOC
+========================= */
+
+
+.gia {
+    font-size: 25px;
+    font-weight: bold;
+    color: #AD8D53;
+    margin: 12px 0 18px;
+}
+
+
+
+
+/* =========================
+   13. NUT CHI TIET
+========================= */
+
+
+.nutbam {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+    background-color: #26332D;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+.nutbam:hover {
+    background-color: #C7A66A;
+    color: black;
+}
+
+
+
+
+/* =========================
+   14. CALL TO ACTION
+========================= */
+
+
+.final-cta {
+    padding: 90px 8%;
+    text-align: center;
+
+
+    background:
+        linear-gradient(
+            rgba(18, 25, 21, 0.92),
+            rgba(18, 25, 21, 0.92)
+        ),
+        url("images/banner.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.cta-content > p:first-child {
+    color: #C7A66A;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+
+.cta-content h2 {
+    font-size: 38px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+
+.cta-content h2 span {
+    color: #C7A66A;
+}
+
+
+.cta-content p {
+    color: #D2D6D0;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #C7A66A;
+    color: black;
+    padding: 13px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #AD8D53;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+
+
+/* =========================
+   15. FOOTER
+========================= */
+
+
+.footer {
+    background-color: #111111;
+    color: white;
+    padding: 45px 6% 15px;
+}
+
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+
+.footer-logo,
+.footer-contact,
+.footer-social {
+    width: 33.33%;
+}
+
+
+.footer-logo .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #C7A66A;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+.footer-logo p {
+    color: #cccccc;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #C7A66A;
+}
+
+
+.footer p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+
+.footer-contact p,
+.footer-social p {
+    margin-bottom: 15px;
+}
+
+
+.footer a {
+    color: #cccccc;
+}
+
+
+.footer a:hover {
+    color: #AD8D53;
+}
+
+
+.footer-slogan {
+    color: #C7A66A;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 18px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+
+
+/* =========================
+   16. RESPONSIVE - TABLET
+   Man hinh toi da 1024px
+========================= */
+
+
+@media (max-width: 1024px) {
+
+
+    header {
+        padding: 12px 3%;
+    }
+
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .navbar {
+        gap: 12px;
+    }
+
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
+
+    .chiaphan {
+        gap: 20px;
+    }
+
+
+    .cardkhoahoc img {
+        height: 220px;
+    }
+
+
+    .thongtin {
+        padding: 20px;
+    }
+
+
+    .thongtin h3 {
+        font-size: 20px;
+    }
+
+
+    .footer {
+        padding: 40px 4% 15px;
+    }
+
+
+    .footer-top {
+        gap: 25px;
+    }
+}
+
+
+
+
+/* =========================
+   17. RESPONSIVE - MOBILE
+   Man hinh toi da 768px
+========================= */
+
+
+@media (max-width: 768px) {
+
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+
+    .page-banner {
+        min-height: 280px;
+        padding: 45px 6%;
+    }
+
+
+    .banner-content h1 {
+        font-size: 34px;
+    }
+
+
+    .banner-content > p:last-child {
+        font-size: 16px;
+    }
+
+
+    .lichtap {
+        width: 90%;
+        padding: 45px 0;
+    }
+
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+
+    .anhlichtap {
+        padding: 12px;
+    }
+
+
+    .goitap {
+        padding: 45px 0 30px;
+    }
+
+
+    .khoahoc {
+        padding: 25px 0;
+    }
+
+
+    .chiaphan {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    .cardkhoahoc img {
+        height: 190px;
+    }
+
+
+    .thongtin {
+        padding: 15px;
+    }
+
+
+    .thongtin h3 {
+        font-size: 18px;
+    }
+
+
+    .thongtin > p {
+        font-size: 14px;
+    }
+
+
+    .gia {
+        font-size: 22px;
+    }
+
+
+    .final-cta {
+        padding: 55px 6%;
+    }
+
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+
+    .footer {
+        padding: 35px 6% 15px;
+    }
+
+
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    .footer-logo,
+    .footer-contact,
+    .footer-social {
+        width: 100%;
+    }
+
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* =========================
+   18. RESPONSIVE - DIEN THOAI NHO
+   Man hinh toi da 480px
+========================= */
+
+
+@media (max-width: 480px) {
+
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .navbar {
+        gap: 8px 12px;
+    }
+
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+
+    .navbar .register-btn {
+        padding: 7px 12px;
+    }
+
+
+    .page-banner {
+        min-height: 240px;
+        padding: 35px 5%;
+    }
+
+
+    .banner-content h1 {
+        font-size: 27px;
+    }
+
+
+    .banner-content > p:first-child {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+
+    .banner-content > p:last-child {
+        font-size: 15px;
+    }
+
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+
+    .section-title > p {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+
+    .lichtap {
+        padding: 35px 0;
+    }
+
+
+    .goitap {
+        padding: 35px 0 20px;
+    }
+
+
+    .khoahoc {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+
+    .tenkhoahoc h2 {
+        font-size: 25px;
+    }
+
+
+    .tenkhoahoc p {
+        font-size: 14px;
+    }
+
+
+    /* Dien thoai: moi hang 1 khoa hoc */
+
+
+    .chiaphan {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .cardkhoahoc img {
+        height: 220px;
+    }
+
+
+    .thongtin {
+        padding: 18px;
+    }
+
+
+    .thongtin h3 {
+        font-size: 20px;
+    }
+
+
+    .thongtin > p {
+        font-size: 15px;
+    }
+
+
+    .gia {
+        font-size: 23px;
+    }
+
+
+    .cta-content h2 {
+        font-size: 25px;
+    }
+
+
+    .cta-content > p:first-child {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+
+    .cta-content p {
+        font-size: 15px;
+    }
+
+
+    .btn {
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+
+
+    .footer {
+        padding: 30px 5% 12px;
+    }
+
+
+    .footer-logo .logo {
+        font-size: 24px;
+    }
+
+
+    .footer-contact p,
+    .footer-social p {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+
+

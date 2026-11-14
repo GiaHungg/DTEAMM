@@ -1,0 +1,710 @@
+
+/* =========================
+   1. CAI DAT CHUNG
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #F2F0E9;
+    min-height: 100vh;
+    line-height: 1.6;
+
+    background:
+        linear-gradient(
+            rgba(12, 15, 12, 0.88),
+            rgba(12, 15, 12, 0.94)
+        ),
+        url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=1600&auto=format&fit=crop")
+        center / cover fixed no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   2. HEADER
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 17px 5%;
+
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(199, 166, 106, 0.25);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #C7A66A;
+    font-size: 28px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.navbar a {
+    color: #E5E5E0;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #C7A66A;
+}
+
+.navbar .register-btn {
+    background: #C7A66A;
+    color: #111310;
+
+    padding: 10px 18px;
+}
+
+.navbar .register-btn:hover {
+    background: #AD8D53;
+    color: #000;
+}
+
+
+/* =========================
+   3. FORM CONTAINER
+========================= */
+
+.form-container {
+    width: 90%;
+    max-width: 550px;
+
+    margin: 55px auto;
+    padding: 35px 40px;
+
+    background: rgba(24, 30, 25, 0.96);
+
+    border: 1px solid rgba(199, 166, 106, 0.3);
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   4. FORM HEADING
+========================= */
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.sub-heading {
+    color: #C7A66A;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.form-container h2 {
+    margin: 10px 0;
+
+    color: #F2F0E9;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.form-heading p {
+    color: #A9AAA4;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   5. TAB BUTTONS
+========================= */
+
+.tab-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 13px 8px;
+
+    background: #202720;
+    border: 1px solid #485147;
+
+    color: #B8B9B1;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    border-color: #C7A66A;
+    color: #C7A66A;
+}
+
+.tab-btn.active {
+    background: #C7A66A;
+    border-color: #C7A66A;
+    color: #111310;
+}
+
+
+/* =========================
+   6. NOTICE
+========================= */
+
+.notice {
+    padding: 12px 14px;
+    margin-bottom: 20px;
+
+    background: rgba(199, 166, 106, 0.1);
+    border: 1px solid #C7A66A;
+
+    color: #C7A66A;
+    font-size: 13px;
+    line-height: 1.5;
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   7. FORM INPUTS
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #D8D8D0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    background: #202720;
+    border: 1px solid #485147;
+
+    color: #F2F0E9;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    outline: none;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #858980;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #C7A66A;
+
+    box-shadow: 0 0 0 2px rgba(199, 166, 106, 0.12);
+}
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: #202720;
+    color: #F2F0E9;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+/* =========================
+   8. SUBMIT BUTTON
+========================= */
+
+.btn-submit {
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #C7A66A;
+    border: 1px solid #C7A66A;
+
+    color: #111310;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: transparent;
+    color: #C7A66A;
+}
+
+.form-note {
+    margin-top: 14px;
+
+    color: #A9AAA4;
+    font-size: 11px;
+
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   9. SUCCESS BOX
+========================= */
+
+.success-box {
+    text-align: center;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #C7A66A;
+    border-radius: 50%;
+
+    color: #C7A66A;
+    font-size: 30px;
+}
+
+.success-box h3 {
+    color: #C7A66A;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.success-box > p {
+    color: #A9AAA4;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.result-card {
+    margin: 22px 0;
+    padding: 20px;
+
+    background: #202720;
+    border: 1px solid rgba(199, 166, 106, 0.25);
+
+    border-radius: 4px;
+
+    text-align: left;
+}
+
+.result-card p {
+    margin-bottom: 12px;
+
+    color: #D7D8D0;
+    font-size: 13px;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+}
+
+.result-card p:last-child {
+    margin-bottom: 0;
+}
+
+.result-card strong {
+    color: #C7A66A;
+}
+
+
+/* =========================
+   10. FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    padding: 45px 6% 15px;
+    background: #111310;
+    border-top: 1px solid rgba(199, 166, 106, 0.25);
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 35px;
+}
+
+.footer-logo,
+.footer-contact,
+.footer-social {
+    width: 33.33%;
+}
+
+.footer-logo .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #C7A66A;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-logo p {
+    color: #cccccc;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid #C7A66A;
+}
+
+.footer p {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.footer-contact p,
+.footer-social p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #C7A66A;
+}
+
+.footer-slogan {
+    color: #C7A66A;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 18px;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+
+
+/* =========================
+   11. RESPONSIVE TABLET
+========================= */
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .form-container {
+        width: 85%;
+        max-width: 550px;
+        margin: 45px auto;
+    }
+
+    .footer {
+        padding: 40px 4% 15px;
+    }
+
+    .footer-top {
+        gap: 25px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   12. RESPONSIVE MOBILE
+   Man hinh toi da 768px
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    /* FORM */
+
+    .form-container {
+        width: 92%;
+        padding: 30px 25px;
+        margin: 35px auto;
+    }
+
+    .form-container h2 {
+        font-size: 23px;
+    }
+
+    .tab-group {
+        gap: 8px;
+    }
+
+    .tab-btn {
+        font-size: 12px;
+        padding: 12px 6px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 35px 6% 15px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-logo,
+    .footer-contact,
+    .footer-social {
+        width: 100%;
+    }
+
+    .footer h3 {
+        font-size: 17px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   13. RESPONSIVE SMALL MOBILE
+   Man hinh toi da 480px
+========================= */
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar {
+        gap: 10px 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .navbar .register-btn {
+        padding: 7px 12px;
+    }
+
+    /* FORM */
+
+    .form-container {
+        width: 94%;
+        padding: 25px 18px;
+        margin: 25px auto;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .tab-group {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 12px;
+        padding: 11px;
+    }
+
+    .btn-submit {
+        font-size: 11px;
+        padding: 13px 10px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 5% 12px;
+    }
+
+    .footer-logo .logo {
+        font-size: 24px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer-contact p,
+    .footer-social p {
+        font-size: 13px;
+    }
+
+    .footer-slogan {
+        font-size: 18px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
